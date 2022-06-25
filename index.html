@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tip calculator app | Frontend Mentor</title>
+
+
+</head>
+
+<body>
+    <main class="tip-card__container">
+        <div class="logo"><img src="images/logo.svg" alt=""></div>
+        <div class="tip-card">
+            <div class="tip-card__left">
+                <div class="bill-input__wrapper">
+                    <div class="bill-input__header-wrapper">
+                        <p>Bill</p>
+                        <span class="error-text-bill"></span>
+                    </div>
+
+                    <div class="input-icon__wrapper">
+                        <label for="bill-input">$</label>
+                        <input type="number" class="bill-input" id="bill-input" placeholder="0">
+                    </div>
+
+                </div>
+                <div class="select-tip__wrapper">
+                    <p>Select Tip %</p>
+                    <div class="select-tip-btns__wrapper">
+                        <input type="button" value="5%">
+                        <input type="button" value="10%">
+                        <input type="button" value="15%">
+                        <input type="button" value="25%">
+                        <input type="button" value="50%">
+                        <input type="number" placeholder="Custom" class="custom">
+                    </div>
+
+                </div>
+                <div class="number-of-people__wrapper">
+                    <div class="number-of-people-input__header-wrapper">
+                        <p>Number of People</p>
+                        <span class="error-text-people"></span>
+                    </div>
+
+                    <div class="input-icon__wrapper">
+                        <label for="npeople">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                        </label>
+                        <input type="number" class="npeople-input" id="npeople" placeholder="0">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="tip-card__right">
+                <div class="tip-amount-pp__wrapper">
+                    <div class="tip-amount-pp__label">
+                        <p class="tip-amount-pp__label-1">Tip Amount</p>
+                        <p class="tip-amount-pp__label-2">/ person</p>
+                    </div>
+                    <div class="tip-amount-pp__text">
+                        <h2>$0.00</h2>
+                    </div>
+                </div>
+                <div class="total-amount-pp__wrapper">
+                    <div class="total-amount-pp__label">
+                        <p class="total-amount-pp__label-1">Total</p>
+                        <p class="total-amount-pp__label-2">/ person</p>
+                    </div>
+                    <div class="total-amount-pp__text">
+                        <h2>$0.00</h2>
+                    </div>
+                </div>
+                <input type="button" value="Reset" class="btn-reset">
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
